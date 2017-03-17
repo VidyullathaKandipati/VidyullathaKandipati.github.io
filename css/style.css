@@ -6,6 +6,7 @@
   margin: 0 auto;
   /*border: 1px solid black;*/
   font-family: 'Josefin Slab', serif;
+  /*font-family: 'helvetica', serif;*/
 }
 .slide{
   width: 100vw;
@@ -24,10 +25,14 @@
   padding-top: 16%;
 }
 .slide-content h1{
-  font-size: 5em;
+  font-size: 3em;
   color: #ff4081;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  /*text-shadow: 2px 2px 3px gba(0,0,0,0.6);*/
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
   /*text-shadow: 1px 1px 2px #ff4081;*/
+}
+.me{
+  margin-top: 5em;
 }
 .me h3{
   margin-top: -10px;
@@ -87,6 +92,8 @@
   margin-top: -2.5em;
   text-align: left;
   color: black;
+  line-height: 3.5;
+  letter-spacing: 2px;
 }
 
 .skills-set h2{
@@ -99,14 +106,19 @@
   width: 7em;
 }
 .text-start{
-  margin-top: 5em;
+  margin-top: 3em;
   /*margin-left: -0.5em;*/
   /*font-weight: bold;*/
   text-align: left;
 }
-.border h4{
-  font-weight: bold;
-  margin-left: 1em;
+.two .text-start{
+  margin-top: 2em;
+}
+.border li{
+  /*font-weight: bold;*/
+  font-size: 1.3em;
+  margin-left: 3em;
+  /*margin-top: 4em;*/
 }
 .skills-set h4, p{
   padding-left: 2em;
@@ -118,8 +130,14 @@
   width: 100%;
   height: 100vh;
 }
+.desc{
+  margin: 0em auto;
+}
+.small-desc{
+  margin: 1em auto;
+}
 .sections{
-  margin-top: 8em;
+  margin-top: 18em;
   flex-direction: column;
   width: 50%;
   /*border: 1px solid black;*/
@@ -127,10 +145,6 @@
   height: 100%;
   align-items: center;
   position: relative;
-}
-.sections img{
-  width: 100%;
-  /*position: fixed;*/
 }
 
 .sections .demo{
@@ -141,9 +155,7 @@
   height: 43%;
   border-radius: 2px;
 }
-.desc{
-  margin-top: 6em;
-}
+
 .my-btn{
   /*transition: all 1s ease-in-out;*/
   transition: all 0.5s;
@@ -168,6 +180,7 @@
   margin-bottom: -2em;
   text-align: center;
   font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 .network-name{
   font-size: 0.9em;
@@ -190,16 +203,16 @@
 }
 .shape {
   fill: transparent;
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -220;
-  stroke-width: 8px;
+  stroke-dasharray: 100 540;
+  stroke-dashoffset: -250;
+  stroke-width: 5px;
   /*stroke: #19f6e8;*/
   stroke: #ff4081;
   /*stroke: white;*/
 }
 .text {
   color: #fff;
-  font-family: 'Roboto Condensed';
+  /*font-family: 'Roboto Condensed';*/
   font-size: 18px;
   /*letter-spacing: 4px;*/
   /*line-height: 32px;*/
@@ -253,9 +266,15 @@
   /*flex-direction: column;*/
   border: 2px solid black;
   margin: 6em;
+  margin-top: 10em;
   padding: 3em;
   height: 40em;
   text-align: center;
+}
+.about-me h4{
+  text-align: justify;
+  margin-left: 6em;
+  margin-right: 6em;
 }
 .profile-pic{
   width: 10%;
@@ -272,14 +291,14 @@
 .menu-item, .menu-open-button {
   background: #ff4081;
   border-radius: 100%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin-left: -40px;
   position: absolute;
   top: 20px;
   color: white;
   text-align: center;
-  line-height: 80px;
+  line-height: 60px;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform ease-out 200ms;
@@ -435,12 +454,6 @@
           transform: translate3d(-114.40705px, 11.66307px, 0);
 }
 
-.other{
-  position: fixed;
-  top: 0;
-  left: 2em;
-}
-
 /*Second nav bar*/
 
 .menu2 {
@@ -451,14 +464,14 @@
 .menu-item2, .menu-open-button2 {
   background: #ff4081;
   border-radius: 100%;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   margin-left: -40px;
   position: absolute;
   top: 20px;
   color: white;
   text-align: center;
-  line-height: 80px;
+  line-height: 50px;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform ease-out 200ms;
@@ -472,14 +485,14 @@
 }
 
 .hamburger2 {
-  width: 25px;
+  width: 20px;
   height: 3px;
   background: white;
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -12.5px;
+  margin-left: -10.5px;
   margin-top: -1.5px;
   -webkit-transition: -webkit-transform 200ms;
   transition: -webkit-transform 200ms;
@@ -619,7 +632,77 @@
 
 .nav{
   position: fixed;
-  top: 0;
-  left: 5%;
+  top: -0.8em;
+  /*left: 5%;*/
   z-index: 999;
+  background-color: rgba(0,0,0,1);
+  width: 100%;
+  height: 5.5em;
+}
+.project{
+  /*display: flex;*/
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 70%;
+  text-align: justify;
+  margin-top: 2em;
+}
+.proj-desc h4{
+  /*flex-direction: row;*/
+  max-width: 100%;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: left;
+  text-align: justify;
+}
+.tech-stack{
+  margin-top: 2em;
+}
+.laptop{
+  position: fixed;
+  top: 10em;
+  right: 1.7em;
+  width: 660px;
+  height: 470px;
+  z-index: 999;
+}
+.projects{
+  background-attachment: fixed;
+}
+.proj1{
+  background-image: url('../assets/singingframes.png');
+  background-size: 50%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: 1s ease-in-out;
+  /*z-index: 9999;*/
+}
+.proj2{
+  background-image: url('../assets/gogirls.png');
+  background-size: 50%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: 1s ease-in-out;
+  /*z-index: 9999;*/
+}
+.proj3{
+  background-image: url('../assets/lcd.png');
+  background-size: 50%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: 1s ease-in-out;
+  /*z-index: 9999;*/
+}
+.proj4{
+  background-image: url('../assets/hwh.png');
+  background-size: 50%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: 1s ease-in-out;
+  /*z-index: 9999;*/
 }
