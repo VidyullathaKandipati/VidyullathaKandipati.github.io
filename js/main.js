@@ -127,10 +127,10 @@ $(document).ready( function(){
     /* Animating THank you page */
     //Hiding the scroll me button animations
     console.log($(this).scrollTop(), contactSection);
-    if ($(this).scrollTop() >= (contactSection - 100)){
-      $('.thank').addClass('bounceInDown');
+    if ($(this).scrollTop() >= (contactSection - wh/2)){
+      // $('.thank').addClass('bounceInUp');
     }else{
-      $('.thank').removeClass('bounceInDown');
+      // $('.thank').removeClass('bounceInUp');
     }
 
   });
