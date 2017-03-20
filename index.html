@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="svg, border effect, animated border, line, grid item, hover, css" />
+  <?xml version="1.0" encoding="utf-8"?>
   <title>Vidyullatha Kandipati</title>
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/component.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jQuery.js"></script>
   <script src="js/ScrollMagic.min.js"></script>
   <script src="js/debug.addIndicators.min.js"></script>
+  <script src="js/snap.svg-min.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
+  <div class="container-fluid">
   <!-- Home page -->
   <section class="slide about" id="page-home">
     <div class="slide-content">
@@ -27,7 +33,7 @@
       <hr class="about">
 
       <!-- SVG animated menu -->
-      <nav class="menu home">
+      <nav class="menu home animated">
         <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
         <label class="menu-open-button" for="menu-open">
           <span class="hamburger hamburger-1"></span>
@@ -37,9 +43,9 @@
 
         <a href="https://github.com/VidyullathaKandipati" class="menu-item" target="_blank"> <i class="fa fa-github fa-fw"></i> </a>
         <a href="https://www.linkedin.com/in/latha-kandipati" class="menu-item" target="_blank"> <i class="fa fa-linkedin fa-fw"></i> </a>
-        <a href="#page-about" class="menu-item"> <i class="fa fa-user"></i> </a>
-        <a href="#page-skills" class="menu-item"> &lt; / &gt; </a>
-        <a href="#page-work" class="menu-item"> <i class="fa fa-laptop"></i> </a>
+        <a href="#page-about" class="menu-item int-link"> <i class="fa fa-user"></i> </a>
+        <a href="#page-skills" class="menu-item int-link"> &lt; / &gt; </a>
+        <a href="#page-work" class="menu-item int-link"> <i class="fa fa-laptop"></i> </a>
       </nav>
 
 
@@ -82,13 +88,17 @@
         </div>
       </a>
       </div> -->
+
+      <div class="arrow bounce">
+        <span class="fa fa-arrow-down " href="#"></span>
+      </div>
     </div>
   </section>
 
   <!-- About me page -->
   <section class="slide bg-grey" id="page-about">
     <!-- SVG animated nav bar -->
-    <div class="nav other">
+    <div class="nav other animated">
     <nav class="menu2">
       <input type="checkbox" href="#" class="menu-open2" name="menu-open2" id="menu-open2"/>
       <label class="menu-open-button2" for="menu-open2">
@@ -97,66 +107,128 @@
         <span class="hamburger2 hamburger-32"></span>
       </label>
 
+      <a href="#page-home" class="menu-item2 int-link"> <i class="fa fa-home"></i> </a>
+      <a href="#page-about" class="menu-item2 int-link"> <i class="fa fa-user"></i> </a>
+      <a href="#page-skills" class="menu-item2 int-link"> &lt; / &gt; </a>
+      <a href="#page-work" class="menu-item2 int-link"> <i class="fa fa-laptop"></i> </a>
       <a href="https://github.com/VidyullathaKandipati" class="menu-item2" target="_blank"> <i class="fa fa-github fa-fw"></i> </a>
       <a href="https://www.linkedin.com/in/latha-kandipati" class="menu-item2" target="_blank"> <i class="fa fa-linkedin fa-fw"></i> </a>
-      <a href="#page-about" class="menu-item2"> <i class="fa fa-user"></i> </a>
-      <a href="#page-skills" class="menu-item2"> &lt; / &gt; </a>
-      <a href="#page-work" class="menu-item2"> <i class="fa fa-laptop"></i> </a>
-      <a href="#page-home" class="menu-item2"> <i class="fa fa-home"></i> </a>
+
     </nav>
     </div>
-    <div class="aboutme">
+    <!-- <div class="aboutme"> -->
       <div class="about-me">
         <img class="profile-pic" src="./assets/My_profile_pic.jpg" alt="My profile pic">
         <h1 class="head animated">Hello !!!</h1>
-        <h4>I am a full-stack developer with a computer science background and strong experience
-            in Object Oriented Programming.</h4>
-        <h4>After finishing my computer science degree, I have worked on telecommunication and investment banking domains in C++ and Linux.</h4>
-        <h4>Only recently I realised my passion for web development, when I was trying to help my
-            cousin with his website.</h4>
-        <h4>I felt it fascinating to share my product with millions of users immediately,
-            which I have not experienced in my previous jobs.</h4>
-        <h2 class="head">And, here I am.</h2>
+        <h4>I am a full-stack developer with a computer science degree and strong experience
+            in Object-Oriented Programming.
+            After finishing my degree, I worked on telecommunication and investment banking projects in C++ and Linux.</h4>
+        <h4>I discovered my passion for web development while helping a family member with their business website.
+            It was exciting to share my work with millions of users immediately, in comparison to the slower pace of desktop application development.</h4>
+        <h4>I love to learn new things and actively seek out challenges. Mostly recently, I participated in the Female Football Hackathon held by the FFA,
+          in which our team won 3rd prize. This was an immensely rewarding experience during which I learned a great deal. <!-- My team included two data analysts and another web developer, gained immense experience. -->
+        </h4><br>
+        <h2 class="head">And here I am.</h2>
       </div>
-    </div>
+    <!-- </div> -->
   </section>
 
   <!-- Skills page -->
-  <section class="slide bg-white" id="page-skills">
+  <!-- Top Navigation -->
+  <section class="demo-3 slide" id="page-skills">
+    <!-- <div class="platform"> -->
+
+    <h2 class="skills-head">My skills</h2>
+    <div class="skills">
+      <div class="box box1 animated">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+          <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+          <line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+          <line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+        </svg>
+        <h2>Dev skills</h2>
+        <h4>Rails | Ruby | C | C++ | Linux</h4>
+        <h4>Object Oriented Programming</h4>
+        <h4>React | Redux</h4>
+        <h4>Backbone | Underscore</h4>
+        <h4>HTML | CSS </h4>
+        <h4>Javascript | jQeury</h4>
+        <h4>Bootstrap | Materal-UI</h4>
+        <h4>Three.js | D3.js</h4>
+      </div>
+      <div class="box box2 animated">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+          <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+          <line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+          <line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+        </svg>
+        <h2>Tools</h2>
+        <h4>Bitbucket</h4>
+        <h4>Github</h4>
+        <h4>Heroku</h4>
+        <h4>Cloudinary</h4>
+        <h4>Firebase</h4>
+        <h4>Clearcase</h4>
+        <h4>HP Quality Centre</h4>
+        <h4>Sybase iSQL</h4>
+      </div>
+      <div class="box box3 animated">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+          <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+          <line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+          <line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+        </svg>
+        <h2>Achievements</h2>
+        <li> Won 3rd prize in the Female Football Hackathon </li>
+        <h4>FFA, Mar 2017</h4>
+        <li> Team excellence award </li>
+        <li>Won 2nd place in the talent test in training (OOPs, C, C++, Linux)</li>
+        <h4>Wipro technologies</h4>
+      </div>
+    </div><!-- /grid -->
+<!-- </div> /container -->
+</section>
+
+  <!-- Skills page -->
+  <!-- <section class="slide bg-white" id="page-skills">
     <h1 class="skills-head">MY SKILLS</h1>
-    <div class="slide-content skills">
-      <div class="skills-set">
+    <div class="row skills">
+      <div class="col-md-3 codrops-top clearfix">
         <h2>Back-end skills</h2>
         <div class="border one">
-            <li class="text-start">Ruby</li>
-            <li>Rails</li>
-            <li>Object Oriented Programming with C++</li>
-            <li>Linux</li>
+            <h4 class="text-start">Ruby</h4>
+            <h4>Rails</h4>
+            <h4>Object Oriented Programming with C++</h4>
+            <h4>Linux</h4>
         </div>
       </div>
-      <div class="skills-set">
+      <div class="col-md-3 skills-set">
         <h2>Front-end skills</h2>
         <div class="border two">
-            <li class="text-start">React, Redux</li>
-            <li>Backbone, Underscore</li>
-            <li>jQuery, Javascript</li>
-            <li>HTML, CSS, Bootstrap, Material-UI</li>
-            <li>Three.js, D3.js</li>
+            <h4 class="text-start">React | Redux</h4>
+            <h4>Backbone | Underscore</h4>
+            <h4>jQuery | Javascript</h4>
+            <h4>HTML | CSS | Bootstrap | Material-UI</h4>
+            <h4>Three.js | D3.js</h4>
         </div>
-      </div projects>
-      <div class="skills-set">
+      </div>-->
+      <!-- </div projects> -->
+    <!--  <div class="col-md-3 skills-set">
         <h2>Tools</h2>
-        <div class="border three">
+        <div class="border three"> -->
           <!-- <h4 class="text-start">Version control tools</h4> -->
-            <li class="text-start">Bitbucket</li>
-            <li>Github</li>
-            <li>Clearcase</li>
-            <li>Heroku</li>
-            <li>Github</li>
+            <!--  <h4 class="text-start">Bitbucket</h4>
+            <h4>Github</h4>
+            <h4>Clearcase</h4>
+            <h4>Heroku</h4>
+            <h4>Github</h4>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Singingframes -->
 
@@ -164,16 +236,16 @@
     <section class="slide-content projects bg-grey proj1">
       <section class="sections">
         <div class="desc">
-          <h1>Singing frames</h1>
+          <h1>Singing Frames</h1>
           <div class="project">
             <div class="proj-desc">
               <h3>Description</h3>
-              <h4>This application allows user to signup and create a family with the other members.
-                  Users can anytime click on the 'find my family' link to see all the familiy members on map based on their last login location.</h4>
+              <h4>This application allows families to locate and connect with other family members.
+                  Users can view other familiy members on a map based on their last login location.</h4>
             </div>
             <div class="tech-stack">
               <h3>Tech-stack</h3>
-              <h4>Rails5 | postgreSql | React | Google-maps with react | Send-Grid <br>
+              <h4>Rails5 | postgreSql | React | Google Maps with React | Send-Grid <br>
                   <br> Material-UI | HTML | CSS | Javascript</h4>
             </div>
           </div>
@@ -205,6 +277,9 @@
         <!-- <img class="laptop" src="./assets/laptop.png" alt="Project 1"> -->
         <!-- <img class="demo" src="./assets/singingframes.png" alt="Project 1 Demo"> -->
       </section>
+      <div class="bounce black-arrow">
+        <a class="fa fa-arrow-down " href="#"></a>
+      </div>
     </section>
 
   </section>
@@ -215,13 +290,13 @@
     <section class="slide-content projects proj2">
       <section class="sections">
         <div class="desc">
-          <h1>Go Girls fashions</h1>
+          <h1>Go Girls Fashions</h1>
           <div class="project">
             <div class="proj-desc">
               <h3>Description</h3>
-              <h4>This is an ecommerce application that allows user to browse apparel based on categories and shop.
-                  It features payment system and user email notification upon checkout. Also an awesome chatbot :)
-                  This is a group project.</h4>
+              <h4>This group project is an ecommerce application that allows users to browse and shop for apparel by category.
+                  It features a credit card payment gateway and email notification on checkout. It also features an awesome chatbot :)
+              </h4>
             </div>
             <div class="tech-stack">
               <h3>Tech-stack</h3>
@@ -256,6 +331,10 @@
         <!-- <img src="./assets/laptop.png" alt="Project 2"> -->
         <!-- <img class="demo" src="./assets/gogirls.png" alt="Project 2 Demo"> -->
       </section>
+      <div class="bounce black-arrow">
+        <a class="fa fa-arrow-down " href="#"></a>
+      </div>
+
     </section>
   </section>
 
@@ -269,7 +348,7 @@
           <div class="project">
             <div class="proj-desc">
               <h3>Description</h3>
-              <h4>This is a real time ticket rendering system for airlines; We worked as a team to complete it in two days.<br>
+              <h4>This is a real-time ticket booking system for airlines. We worked as a team to complete it under a strict deadline of two days.<br>
                   </h4>
             </div>
             <div class="tech-stack">
@@ -305,6 +384,10 @@
         <!-- <img src="./assets/laptop.png" alt="Project 3"> -->
         <!-- <img class="demo" src="./assets/lcd.png" alt="Project 3 Demo"> -->
       </section>
+      <div class="bounce black-arrow">
+        <a class="fa fa-arrow-down " href="#"></a>
+      </div>
+
     </section>
 
   </section>
@@ -315,12 +398,12 @@
     <section class="slide-content projects proj4">
       <section class="sections">
         <div class="desc">
-          <h1>Home away from home</h1>
+          <h1>Home Away From Home</h1>
           <div class="project">
             <div class="proj-desc">
               <h3>Description</h3>
-              <h4>This is my first rails project. It allows to browse properties available for sharing.<br>
-                  User can also search based on postcode and the properties are shown on google maps. And user can book based on availability.</h4>
+              <h4>This is my first Rails project. It allows browsing of properties available for sharing.<br>
+                  Users can also search by postcode and the properties are marked on Google Maps. Bookings can be made based on calendar availability and property capacity.</h4>
             </div>
             <div class="tech-stack">
               <h3>Tech-stack</h3>
@@ -355,27 +438,162 @@
         <!-- <img src="./assets/laptop.png" alt="Project 4"> -->
         <!-- <img class="demo" src="./assets/HWH.png" alt="Project 4 Demo"> -->
       </section>
+      <div class="bounce black-arrow">
+        <a class="fa fa-arrow-down " href="#"></a>
+      </div>
+
+    </section>
+
+  </section>
+
+  <section class="slide">
+    <section class="slide-content projects proj5 bg-grey">
+      <section class="sections">
+        <div class="desc">
+          <h1>Multiplayer TiC-TaC-ToE</h1>
+          <div class="project">
+            <div class="proj-desc">
+              <h3>Description</h3>
+              <h4>This is a multi-player version of Tic-Tac-Toe using Google's Firebase API.<br>
+                  I took an extra challenge of making this multi-player as oppose to traditional one-player version.</h4>
+            </div>
+            <div class="tech-stack">
+              <h3>Tech-stack</h3>
+              <h4>HTML | CSS | Javascript | jQuery | Firebase</h4>
+            </div>
+          </div>
+          <br>
+
+          <div class="controls">
+          <a href="https://vidyullathakandipati.github.io/tic-tac-toe/" class="no-underline" target="_blank"> <!-- class="btn btn-default btn-lg my-btn-inverse" -->
+            <div class="svg-wrapper">
+              <svg height="60" width="220" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" height="60" width="160" />
+              </svg>
+              <span class="text black">Demo</span>
+            </div>
+          </a>
+          <br>
+          <a href="https://github.com/VidyullathaKandipati/tic-tac-toe" class="no-underline" target="_blank">
+            <div class="svg-wrapper">
+              <svg height="60" width="220" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" height="60" width="160" />
+              </svg>
+              <span class="text black">Code</span>
+            </div>
+          </a>
+          </div>
+
+        </div>
+      </section>
+      <section class="sections">
+        <!-- <img src="./assets/laptop.png" alt="Project 4"> -->
+        <!-- <img class="demo" src="./assets/HWH.png" alt="Project 4 Demo"> -->
+      </section>
+      <div class="bounce black-arrow">
+        <a class="fa fa-arrow-down " href="#"></a>
+      </div>
+
     </section>
 
   </section>
 
   <!-- Previous experience -->
 
-  <section class="slide color-white" id="page-prev">
+  <section class="slide">
+    <section class="slide-content projects proj6">
+      <section class="sections">
+        <div class="desc">
+          <h1>Equity Clear - LCH.Clearnet</h1>
+          <div class="project">
+            <div class="proj-desc">
+              <h3>Description</h3>
+              <h4>EquityClear is a clearing service that provides clearing and settlement for equity based trades.
+                  EquityClear provides protection against counterparty risk and provides Settlement Netting.
+                  This application also calculates Initial and Variation Margins to estimate the risk each member pose.
+                  </h4>
+            </div>
+            <div class="tech-stack">
+              <h3>Tech-stack</h3>
+              <h4>C++ | Linux | SQL (Sybase) </h4>
+            </div>
+          </div>
+          <br>
 
-    <div class="slide-content">
-      <h1>Previous Experience slide show</h1>
-    </div>
+        </div>
+      </section>
+      <section class="sections">
+        <!-- <img src="./assets/laptop.png" alt="Project 4"> -->
+        <!-- <img class="demo" src="./assets/HWH.png" alt="Project 4 Demo"> -->
+      </section>
+      <div class="bounce black-arrow">
+        <a class="fa fa-arrow-down " href="#"></a>
+      </div>
+    </section>
+
+  </section>
+
+  <section class="slide">
+    <section class="slide-content projects proj7 bg-grey">
+      <section class="sections">
+        <div class="desc">
+          <h1>ATM Cross Connect - Nokia Networks</h1>
+          <div class="project">
+            <div class="proj-desc">
+              <h3>Description</h3>
+              <h4>AXC is a transport node for third generation (3G) networks and provides wide range of
+                  interfaces for 3G ATM traffic over existing networks.
+                  It functions as an ATM cross-connect device for Radio Access Network (RAN).
+              </h4>
+            </div>
+            <div class="tech-stack">
+              <h3>Tech-stack</h3>
+              <h4>C | C++ | Linux </h4>
+            </div>
+          </div>
+          <br>
+
+        </div>
+      </section>
+      <section class="sections">
+        <!-- <img src="./assets/laptop.png" alt="Project 4"> -->
+        <!-- <img class="demo" src="./assets/HWH.png" alt="Project 4 Demo"> -->
+      </section>
+      <div class="bounce black-arrow">
+        <a class="fa fa-arrow-down " href="#"></a>
+      </div>
+
+    </section>
+
   </section>
 
   <!-- Contact -->
 
-  <section class="slide color-black" id="page-contact">
-    <div class="slide-content">
-      <h1>Contact</h1>
+  <section class="slide" id="page-contact">
+    <div class="about-me">
+      <div class="thank animated">
+      <h1>Thank you for visiting my website.</h1>
+      <h1 class="contact">Interested to know more? Lets chat over coffee.</h1>
+      <svg class="coffee" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px"
+ height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve" >
+        <g>
+          <path fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M88,68c0,0-7,5-24,5
+    s-29-4-29-7s12-10,29-10s29,6,29,9s-1,19-8,26c-6,6-13,10-21,10s-15-3-21-10s-8-19-8-25"/>
+          <path fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M45.358,93.495
+    C37.899,95.604,35,98.647,35,101c0,4,12,10,29,10s27.125-5.375,29-10"/>
+          <path fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M92.548,71
+    c0,0,9.452,0,9.452,6s-3.534,9-13.534,9"/>
+          <path class="smoke" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M59.157,62.169
+    c0,0,3.145-2.013,1.752-5.165c-1.289-2.917-2.34-2.588-3.583-5.333c-1.308-2.888,1.75-5.417,1.75-5.417"/>
+          <path class="smoke" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M67.114,62.296
+    c0,0,5.878-4.921,3.961-9.421c-1.894-4.447-4.243-4.849-5.458-8.704c-1.303-4.131,3.458-8.583,3.458-8.583"/>
+        </g>
+    </svg>
+
+      </div>
     </div>
   </section>
 
-
+</div>
 </body>
 </html>
