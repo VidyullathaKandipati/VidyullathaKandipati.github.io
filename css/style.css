@@ -26,7 +26,13 @@ body{
 .head, .skills-head{
   color: #ff4081;
 }
-
+.headmail{
+  color: white;
+}
+.headmail:hover{
+  text-decoration: none;
+  color: #ff4081;
+}
 .slide-content{
   text-align: center;
   height: 30%;
@@ -835,10 +841,13 @@ width: 50%;
 }
 .links{
   color: black;
-  cursor: pointer;
-  transition: none;
+  cursor: pointer: ;
+  transition-delay: 0s;
+  transition: all 0.1s ease;
+  /*transition: none;*/
 }
 .links:hover{
   color: #ff4081;
-  transition: none;
+  transition-delay: 0s;
+  transition: all 0.1s ease;
 }
